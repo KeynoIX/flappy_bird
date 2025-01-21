@@ -5,6 +5,8 @@ public class player : MonoBehaviour
     Rigidbody2D Rigidbody;
     bool isJumping;
     public float jumpForce = 100f;
+    sonor sonor;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
