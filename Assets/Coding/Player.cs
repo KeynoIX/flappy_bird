@@ -5,7 +5,7 @@ public class player : MonoBehaviour
     Rigidbody2D Rigidbody;
     bool isJumping;
     public float jumpForce = 100f;
-    sonor sonor;
+    public AudioSource jumpSound;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,6 +34,7 @@ public class player : MonoBehaviour
         {
             Rigidbody.AddForce(new Vector2(0f, jumpForce));
             isJumping = false;
+            jumpSound.Start();
         }
     }
 }
